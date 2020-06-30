@@ -2,32 +2,64 @@
 
 <head>
     <title>Technology - BBC News</title>
-    <style type="text/css">    
-        < !--remove unnecessary space-->body {
+    <style type="text/css">
+        /* remove unnecessary space */
+        body {
+            background-color: white;
             margin: 0;
             padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
         }
 
         #headbar {
-            < !-- give a fix width and magin 0 auto to center the div-->;
+            /* give a fix width and magin 0 auto to center the div */
+            /* background-color: red; */
             width: 1000px;
-            height: 30px;
+            height: 40px;
             margin: 0 auto;
-            background-color: white;
         }
 
         #logo {
-            width: 40px;
-            height: 60px;
-            margin-left: 7px;
+            background-color: antiquewhite;
+            height: 100%;
+            width: 50px;
+            padding: 0 8px;
+            /* margin-left: 7px; */
+            float: left;
         }
-       
+
+        .headbar-section {
+            background-color: aqua;
+            float: left;
+            height: 100%;
+            /* TODO: add left border */
+            /* border: 3px black; */
+        }
+
+        #sign-in-logo {
+            width: 25px;
+            margin: 6px;
+            margin-top: 8px;
+            float: left;
+        }
+
+        .headbar-text {
+            font-weight: bold;
+            color: black;
+            font-size: 13px;
+            position: relative;
+            top: 13px;
+        }
     </style>
 </head>
 
 <body>
     <div id="headbar">
         <img id="logo" src="images/logo-bbc.png">
+        <div id="sign-in" class="headbar-section"><img id="sign-in-logo" src="images/sign-in-logo.PNG">
+            <span class="headbar-text">Sign in</span>
+        </div>
+
 
     </div>
 </body>
