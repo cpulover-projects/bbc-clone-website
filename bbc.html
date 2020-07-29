@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -22,9 +23,8 @@
         #logo {
             background-color: antiquewhite;
             height: 100%;
-            width: 50px;
+            width: 4%;
             padding: 0 8px;
-            /* margin-left: 7px; */
             float: left;
         }
 
@@ -32,15 +32,24 @@
             background-color: aqua;
             float: left;
             height: 100%;
-            /* TODO: add left border */
-            /* border: 3px black; */
+            width: 6%;
+            border-left: 1px gray solid;
+
         }
 
-        #sign-in-logo {
-            width: 25px;
-            margin: 6px;
-            margin-top: 8px;
-            float: left;
+        #more-section {
+            width: 11%;
+        }
+
+        #search-section {
+            width: auto;
+        }
+
+        span {
+            background-color: greenyellow;
+            /* center <span> inside <div> */
+            display: table;
+            margin: 0 auto;
         }
 
         .headbar-text {
@@ -49,15 +58,96 @@
             font-size: 13px;
             position: relative;
             top: 13px;
+            /* text-align: center; */
         }
+
+        #sign-in-text {
+            margin-right: 65px;
+        }
+
+        #more-text {
+            margin-right: 65px;
+        }
+
+        #sign-in-logo {
+            width: 25px;
+            margin: 8px 6px;
+            float: left;
+        }
+
+        #more-icon {
+            width: 15px;
+            float:right;
+            margin: 2px 15px;
+        }
+
+        #sign-in {
+            position: relative;
+            width: 15%;
+        }
+
+        #search-box {
+            width: 93px;
+            height: 15px;
+            background-color: #E4E4E4;
+            border: none;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 5px;
+            margin: 7px 0 8px 10px;
+        }
+
+        #search-icon {
+            height: 25px;
+            margin: 7px 10px 0 0 ;
+            float: right;
+        }
+
+      
+
     </style>
 </head>
 
 <body>
     <div id="headbar">
         <img id="logo" src="images/logo-bbc.png">
-        <div id="sign-in" class="headbar-section"><img id="sign-in-logo" src="images/sign-in-logo.PNG">
-            <span class="headbar-text">Sign in</span>
+
+        <div id="sign-in" class="headbar-section">
+            <img id="sign-in-logo" src="images/sign-in-logo.PNG">
+            <span id="sign-in-text" class="headbar-text">Sign in</span>
+        </div>
+
+        <div class="headbar-section">
+            <span class="headbar-text">Home</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">News</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Sport</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Reel</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Worklife</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Travel</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Future</span>
+        </div>
+        <div class="headbar-section">
+            <span class="headbar-text">Culture</span>
+        </div>
+        <div class="headbar-section" id="more-section">
+            <span class="headbar-text" id="more-text">More</span>
+            <img id="more-icon" src="images/more-icon.jpg">
+        </div>
+        <div class="headbar-section" id="search-section">
+            <input id="search-box" type="text" value="Search">
+            <input type="image" id="search-icon" src="images/search-icon.jpg">
         </div>
 
 
