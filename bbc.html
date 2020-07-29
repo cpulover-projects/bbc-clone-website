@@ -32,7 +32,7 @@
             background-color: aqua;
             float: left;
             height: 100%;
-            width: 6%;
+            width: 7%;
             border-left: 1px gray solid;
 
         }
@@ -77,7 +77,7 @@
 
         #more-icon {
             width: 15px;
-            float:right;
+            float: right;
             margin: 2px 15px;
         }
 
@@ -87,7 +87,7 @@
         }
 
         #search-box {
-            width: 93px;
+            width: 55px;
             height: 15px;
             background-color: #E4E4E4;
             border: none;
@@ -99,16 +99,68 @@
 
         #search-icon {
             height: 25px;
-            margin: 7px 10px 0 0 ;
+            margin: 7px 10px 0 0;
             float: right;
         }
 
-      
+        .clear {
+            clear: both;
+        }
 
+        .menu-bar-container {
+            background-color: #BB1919;
+            height: 65px;
+        }
+
+        .menu-bar {
+            background-color: blueviolet;
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .menu-bar h1 {
+            margin: 0;
+            padding-top: 5px;
+            padding-left: 6px;
+            color: white;
+            font-size: 45px;
+            font-weight: normal;
+        }
+
+        .menu-bar-2-container {
+            background-color: #A71716;
+            height: 30px;
+        }
+
+        .menu-bar-2 {
+            background-color: rgb(91, 7, 170);
+
+        }
+
+        .menu-bar-2 a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 8px;
+            border-right:gray 1px solid;
+            position: relative;
+            top: 7px;
+            font-size: 13px;
+        }
+
+        #more-text-menu {
+            padding: 0 12px;
+            border-right: 0;
+        }
+
+        .menu-bar-2 a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
+    <!-- HEAD BAR -->
     <div id="headbar">
         <img id="logo" src="images/logo-bbc.png">
 
@@ -149,9 +201,42 @@
             <input id="search-box" type="text" value="Search">
             <input type="image" id="search-icon" src="images/search-icon.jpg">
         </div>
-
-
     </div>
+    <!-- END OF HEAD BAR -->
+
+    <!-- clear when start a new section below  -->
+    <div class="clear"></div>
+
+    <!-- MENU BAR -->
+    <div class="menu-bar-container">
+        <div class="menu-bar">
+            <h1>NEWS</h1>
+        </div>
+    </div>
+
+    <!-- clear when start a new section below  -->
+    <div class="clear"></div>
+    
+    <div class="menu-bar-container menu-bar-2-container">
+        <div class="menu-bar menu-bar-2">
+            <a href="#">Home</a>
+            <a href="#">Coronavirus</a>
+            <a href="#">Video</a>
+            <a href="#">World</a>
+            <a href="#">UK</a>
+            <a href="#">Business</a>
+            <a href="#">Tech</a>
+            <a href="#">Science</a>
+            <a href="#">Stories</a>
+            <a href="#">Entertainment & Arts</a>
+            <a href="#">Health</a>
+            <a href="#">World News TV</a>
+            <a href="#">In Pictures</a>
+            <a id="more-text-menu" href="#">More</a>
+
+        </div>
+    </div>
+    <!-- END OF MENU BAR -->
 </body>
 
 </html>
