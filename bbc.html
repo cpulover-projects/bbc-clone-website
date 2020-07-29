@@ -142,7 +142,7 @@
             color: white;
             text-decoration: none;
             padding: 0px 8px;
-            border-right:gray 1px solid;
+            border-right: gray 1px solid;
             position: relative;
             top: 7px;
             font-size: 13px;
@@ -153,8 +153,88 @@
             border-right: 0;
         }
 
-        .menu-bar-2 a:hover{
+        .menu-bar-2 a:hover {
             text-decoration: underline;
+        }
+
+        #main-content-container {
+            background-color: rgb(206, 233, 196);
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        #main-content-container h2 {
+            color: black;
+            margin: 0;
+            font-size: 23px;
+            font-weight: normal;
+            margin-left: 6px;
+            padding-top: 8px;
+            border-bottom: #BB1919 3px solid;
+            width: 49px;
+        }
+
+        #big-article {
+            background-color: rgb(156, 156, 253);
+            height: 411px;
+            width: 39%;
+            float: left;
+            border: white 5px solid;
+        }
+
+        .small-article {
+            background-color: rgb(215, 215, 252);
+            height: 200px;
+            width: 19%;
+            float: left;
+            border: white 5px solid;
+
+        }
+
+        .big-article-img {
+            height: 200px;
+        }
+
+        .big-article-img a {
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .big-article-img a:hover {
+            color: rgb(0, 119, 255);
+            text-decoration: underline;
+        }
+
+        p {
+            color: rgb(83, 83, 83);
+            font-size: 14px;
+            width: auto;
+        }
+
+        li .small-link {
+            font-size: 14px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 25px;
+        }
+
+        li {
+            color: black;
+        }
+
+        #footer-1-container {
+            background-color: black;
+            height: 100px;
+        }
+
+        #footer-2-container {
+            background-color: rgb(87, 87, 87);
+            height: 200px;
         }
     </style>
 </head>
@@ -216,7 +296,7 @@
 
     <!-- clear when start a new section below  -->
     <div class="clear"></div>
-    
+
     <div class="menu-bar-container menu-bar-2-container">
         <div class="menu-bar menu-bar-2">
             <a href="#">Home</a>
@@ -237,6 +317,88 @@
         </div>
     </div>
     <!-- END OF MENU BAR -->
+
+    <!-- clear when start a new section below  -->
+    <div class="clear"></div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content-container">
+        <h2>Tech</h2>
+        <br>
+        <div id="big-article">
+            <div class="big-article-img">
+                <img src="images/big-article.jpg" width="100%" height="200px">
+                <a href="">Wiley permanently banned by Twitter</a>
+                <p>Twitter was accused of inaction and delay over anti-Semitic remarks posted by the music star.</p>
+                <p>US & Canada</p>
+                <ul>
+                    <li><a class="small-link" href="">A day of reckoning for US tech giants' CEOs</a></li>
+                    <li><a class="small-link" href="">Elon Musk calls for 'break up' of Amazon</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article1.jpg" alt="" width="100%" height="100px">
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article2.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article3.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article4.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article5.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="clear"></div>
+
+        <br><br><br><br>
+
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+
+        </div>
+    </div>
+    <!-- END OF MAIN CONTENT -->
+
+    <div class="clear"></div>
+    <br><br>
+
+    <!-- FOOTER -->
+    <div id="footer-1-container">
+
+    </div>
+    <div id="footer-2-container">
+
+    </div>
+
+    <!-- END OF FOOTER -->
 </body>
 
 </html>
