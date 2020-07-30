@@ -1,0 +1,52 @@
+#footer-1-container {
+    background-color: rgb(49, 49, 49);
+    height: 100px;
+}
+
+#footer-2-container {
+    background-color: rgb(87, 87, 87);
+    height: 150px;
+}
+
+#footer-container h2 {
+   padding-top: 25px;
+    color: #ffffff;
+}
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    color: #E4E4E4;
+    font-size: 13px;
+}
+
+.footer-1-link-container {
+    /* background-color: aqua; */
+    width: 24%;
+    /* height: 50px; */
+    padding: 15px 0 15px 7px ;
+    float: left;
+}
+
+.footer-2-link-container {
+    /* background-color: #A71716; */
+    width: 15%;
+    margin-top:20px;
+    padding-left: 17px ;
+    float: left;
+    border-left: rgb(207, 207, 207) 1px solid;
+}
+
+.first {
+    border: none;
+    padding-left: 7px ;
+
+}
+
+.footer-2-link-container p {
+    padding: 0;
+    margin: 0;
+}

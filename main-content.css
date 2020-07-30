@@ -1,0 +1,74 @@
+#main-content-container {
+    /* background-color: rgb(206, 233, 196); */
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#tech {
+    width: 49px;
+    border-bottom: #BB1919 3px solid;
+
+}
+
+.big-article {
+    background-color: rgb(178, 238, 193);
+    height: 512px;
+    width: 39%;
+    float: left;
+    border: white 6px solid;
+}
+
+.small-article {
+    background-color: rgb(234, 247, 238);
+    height: 250px;
+    width: 19%;
+    float: left;
+    border: white 6px solid;
+    position: relative;
+
+}
+
+.no-description {
+    height: 192px;
+}
+
+.big-article a {
+    font-size: 25px;
+}
+
+.small-article a {
+    font-size: 14px;
+}
+
+.small-article p {
+    margin-bottom: 0;
+}
+
+.article-bottom a {
+    font-weight: normal;
+    padding-left: 7px;
+    border-left: gray 1px solid;
+}
+
+.article-bottom {
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2px;
+}
+
+.article-bottom img {
+    position: relative;
+    height: 14px;
+    top: 2px;
+}
+
+li .small-link {
+    font-size: 14px;
+}
+
+#watch {
+    width: 150px;
+    float: left;
+}

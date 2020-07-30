@@ -1,0 +1,49 @@
+.menu-bar-container {
+    background-color: #BB1919;
+    height: 65px;
+}
+
+.menu-bar {
+    background-color: blueviolet;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu-bar h1 {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 6px;
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.menu-bar-2-container {
+    background-color: #A71716;
+    height: 30px;
+}
+
+.menu-bar-2 {
+    background-color: rgb(91, 7, 170);
+
+}
+
+.menu-bar-2 a {
+    color: white;
+    font-weight: normal;
+    padding: 0px 11.5px;
+    border-right: gray 1px solid;
+    position: relative;
+    top: 7px;
+    font-size: 13px;
+}
+
+#more-text-menu {
+    /* padding: 0 12px; */
+    border-right: 0;
+}
+
+.menu-bar-2 a:hover {
+    text-decoration: underline;
+}

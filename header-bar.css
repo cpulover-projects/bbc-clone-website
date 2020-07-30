@@ -1,0 +1,90 @@
+#headbar {
+    /* give a fix width and magin 0 auto to center the div */
+    /* background-color: red; */
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#logo {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 4%;
+    padding: 0 8px;
+    float: left;
+}
+
+.headbar-section {
+    background-color: aqua;
+    float: left;
+    height: 100%;
+    width: 7%;
+    border-left: 1px gray solid;
+
+}
+
+#more-section {
+    width: 11%;
+}
+
+#search-section {
+    width: auto;
+}
+
+span {
+    background-color: greenyellow;
+    /* center <span> inside <div> */
+    display: table;
+    margin: 0 auto;
+}
+
+.headbar-text {
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+    position: relative;
+    top: 13px;
+    /* text-align: center; */
+}
+
+#sign-in-text {
+    margin-right: 65px;
+}
+
+#more-text {
+    margin-right: 65px;
+}
+
+#sign-in-logo {
+    width: 25px;
+    margin: 8px 6px;
+    float: left;
+}
+
+#more-icon {
+    width: 15px;
+    float: right;
+    margin: 2px 15px;
+}
+
+#sign-in {
+    position: relative;
+    width: 15%;
+}
+
+#search-box {
+    width: 83px;
+    height: 15px;
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px;
+    margin: 7px 0 8px 10px;
+}
+
+#search-icon {
+    height: 25px;
+    margin: 7px 10px 0 0;
+    float: right;
+}
