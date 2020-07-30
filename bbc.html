@@ -15,7 +15,7 @@
         #headbar {
             /* give a fix width and magin 0 auto to center the div */
             /* background-color: red; */
-            width: 1000px;
+            width: 1200px;
             height: 40px;
             margin: 0 auto;
         }
@@ -87,7 +87,7 @@
         }
 
         #search-box {
-            width: 55px;
+            width: 83px;
             height: 15px;
             background-color: #E4E4E4;
             border: none;
@@ -114,7 +114,7 @@
 
         .menu-bar {
             background-color: blueviolet;
-            width: 1000px;
+            width: 1200px;
             height: 100%;
             margin: 0 auto;
         }
@@ -140,8 +140,8 @@
 
         .menu-bar-2 a {
             color: white;
-            text-decoration: none;
-            padding: 0px 8px;
+            font-weight: normal;
+            padding: 0px 11.5px;
             border-right: gray 1px solid;
             position: relative;
             top: 7px;
@@ -149,7 +149,7 @@
         }
 
         #more-text-menu {
-            padding: 0 12px;
+            /* padding: 0 12px; */
             border-right: 0;
         }
 
@@ -158,60 +158,97 @@
         }
 
         #main-content-container {
-            background-color: rgb(206, 233, 196);
-            width: 1000px;
+            /* background-color: rgb(206, 233, 196); */
+            width: 1200px;
             height: auto;
             margin: 0 auto;
         }
 
-        #main-content-container h2 {
+        h2 {
+            /* background-color: gold; */
             color: black;
             margin: 0;
             font-size: 23px;
             font-weight: normal;
             margin-left: 6px;
             padding-top: 8px;
-            border-bottom: #BB1919 3px solid;
-            width: 49px;
         }
 
-        #big-article {
-            background-color: rgb(156, 156, 253);
-            height: 411px;
+        #tech {
+            width: 49px;
+            border-bottom: #BB1919 3px solid;
+
+        }
+
+        .big-article {
+            background-color: rgb(178, 238, 193);
+            height: 512px;
             width: 39%;
             float: left;
-            border: white 5px solid;
+            border: white 6px solid;
         }
 
         .small-article {
-            background-color: rgb(215, 215, 252);
-            height: 200px;
+            background-color: rgb(234, 247, 238);
+            height: 250px;
             width: 19%;
             float: left;
-            border: white 5px solid;
+            border: white 6px solid;
+            position: relative;
 
         }
 
-        .big-article-img {
-            height: 200px;
+        .no-description {
+            height: 192px;
         }
 
-        .big-article-img a {
+        a {
             color: black;
-            font-size: 25px;
             font-weight: bold;
             text-decoration: none;
         }
 
-        .big-article-img a:hover {
+        a:hover {
             color: rgb(0, 119, 255);
             text-decoration: underline;
+        }
+
+        .big-article a {
+            font-size: 25px;
+        }
+
+        .small-article a {
+            font-size: 14px;
+        }
+
+        .small-article p {
+            margin-bottom: 0;
+        }
+
+        .article-bottom a {
+            font-weight: normal;
+            padding-left: 7px;
+            border-left: gray 1px solid;
+        }
+
+        .article-bottom {
+            margin-top: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2px;
+        }
+
+        .article-bottom img {
+            position: relative;
+            height: 14px;
+            top: 2px;
         }
 
         p {
             color: rgb(83, 83, 83);
             font-size: 14px;
             width: auto;
+            margin-top: 8px;
         }
 
         li .small-link {
@@ -227,15 +264,68 @@
             color: black;
         }
 
+        #watch {
+            width: 150px;
+            float: left;
+        }
+
+        hr {
+            margin-top: 22px;
+        }
+
         #footer-1-container {
-            background-color: black;
+            background-color: rgb(49, 49, 49);
             height: 100px;
         }
 
         #footer-2-container {
             background-color: rgb(87, 87, 87);
-            height: 200px;
+            height: 150px;
         }
+
+        #footer-container h2 {
+           padding-top: 25px;
+            color: #ffffff;
+        }
+
+        .footer {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-link {
+            color: #E4E4E4;
+            font-size: 13px;
+        }
+
+        .footer-1-link-container {
+            /* background-color: aqua; */
+            width: 24%;
+            /* height: 50px; */
+            padding: 15px 0 15px 7px ;
+            float: left;
+        }
+
+        .footer-2-link-container {
+            /* background-color: #A71716; */
+            width: 15%;
+            margin-top:20px;
+            padding-left: 17px ;
+            float: left;
+            border-left: rgb(207, 207, 207) 1px solid;
+        }
+
+        .first {
+            border: none;
+            padding-left: 7px ;
+
+        }
+
+        .footer-2-link-container p {
+            padding: 0;
+            margin: 0;
+        }
+
     </style>
 </head>
 
@@ -312,6 +402,8 @@
             <a href="#">Health</a>
             <a href="#">World News TV</a>
             <a href="#">In Pictures</a>
+            <a href="#">Reality Check</a>
+
             <a id="more-text-menu" href="#">More</a>
 
         </div>
@@ -323,14 +415,15 @@
 
     <!-- MAIN CONTENT -->
     <div id="main-content-container">
-        <h2>Tech</h2>
+        <h2 id="tech">Tech</h2>
         <br>
-        <div id="big-article">
+        <div class="big-article">
             <div class="big-article-img">
-                <img src="images/big-article.jpg" width="100%" height="200px">
+                <img src="images/big-article.jpg" width="100%" height="250px">
                 <a href="">Wiley permanently banned by Twitter</a>
                 <p>Twitter was accused of inaction and delay over anti-Semitic remarks posted by the music star.</p>
                 <p>US & Canada</p>
+                <br>
                 <ul>
                     <li><a class="small-link" href="">A day of reckoning for US tech giants' CEOs</a></li>
                     <li><a class="small-link" href="">Elon Musk calls for 'break up' of Amazon</a></li>
@@ -338,26 +431,44 @@
             </div>
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article1.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article1.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article2.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article2.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 5h <a href="">Technology</a></p>
 
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article3.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article3.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 12h <a href="">Business</a></p>
 
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article4.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article4.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
 
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article5.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article5.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 3h <a href="">Business</a></p>
 
         </div>
         <div class="small-article">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">A day of reckoning for US tech giants' CEOs</a>
+            <p>US lawmakers are considering tougher regulation of the firms, which critics say are too powerful.</p>
+            <p class="article-bottom"><img src="images/clock.jpg"> 5h <a href="">Technology</a></p>
 
         </div>
         <div class="clear"></div>
@@ -365,24 +476,64 @@
         <br><br><br><br>
 
         <div class="small-article no-description">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">Donald Trump Jr suspended from tweeting</a>
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
 
         </div>
         <div class="small-article no-description">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">Donald Trump Jr suspended from tweeting</a>
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
 
         </div>
         <div class="small-article no-description">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">Donald Trump Jr suspended from tweeting</a>
+
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
 
         </div>
         <div class="small-article no-description">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">Donald Trump Jr suspended from tweeting</a>
+
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
 
         </div>
         <div class="small-article no-description">
-            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="100px">
+            <img class="small-article-img" src="images/article6.jpg" alt="" width="100%" height="125px">
+            <a href="">Donald Trump Jr suspended from tweeting</a>
 
+            <p class="article-bottom"><img src="images/clock.jpg"> 2h <a href="">Business</a></p>
+        </div>
+
+        <div class="clear"></div>
+        <br><br><br>
+        <h2 id="watch">Watch/Listen</h2>
+        <hr>
+        <div class="clear"></div>
+        <br>
+
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/video.jpg" alt="" width="100%" height="125px">
+            <a href=""> Click News: 3D hand tracking wristband</a>
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/video.jpg" alt="" width="100%" height="125px">
+            <a href=""> Click News: 3D hand tracking wristband</a>
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/video.jpg" alt="" width="100%" height="125px">
+            <a href=""> Click News: 3D hand tracking wristband</a>
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/video.jpg" alt="" width="100%" height="125px">
+            <a href=""> Click News: 3D hand tracking wristband</a>
+        </div>
+        <div class="small-article no-description">
+            <img class="small-article-img" src="images/video.jpg" alt="" width="100%" height="125px">
+            <a href=""> Click News: 3D hand tracking wristband</a>
         </div>
     </div>
     <!-- END OF MAIN CONTENT -->
@@ -391,13 +542,60 @@
     <br><br>
 
     <!-- FOOTER -->
-    <div id="footer-1-container">
-
+    <div id="footer-container">
+        <div id="footer-1-container">
+            <div class="footer">
+                <h2>BBC News Services</h2>
+                <div class="footer-1-link-container">
+                    <a class="footer-link" href="">On your mobile</a>
+                </div>
+                <div class="footer-1-link-container">
+                    <a class="footer-link" href="">On smart speakers</a>
+                </div>
+                <div class="footer-1-link-container">
+                    <a class="footer-link" href="">Get news alerts</a>
+                </div>
+                <div class="footer-1-link-container">
+                    <a class="footer-link" href="">Contact BBC News</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer-2-container">
+            <div class="footer">
+                <h2><b>Explore the BBC</b></h2>
+                <div class="footer-2-link-container first">
+                    <p><a href="" class="footer-link">Home</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">Future</a></p>
+                </div>
+                <div class="footer-2-link-container">
+                    <p><a href="" class="footer-link">News</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">Culture</a></p>
+                </div>
+                <div class="footer-2-link-container">
+                    <p><a href="" class="footer-link">Sport</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">Music</a></p>
+                </div>
+                <div class="footer-2-link-container">
+                    <p><a href="" class="footer-link">Reel</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">TV</a></p>
+                </div>
+                <div class="footer-2-link-container">
+                    <p><a href="" class="footer-link">Worklife</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">Weather</a></p>
+                </div>
+                <div class="footer-2-link-container">
+                    <p><a href="" class="footer-link">Travel</a></p>
+                    <br>
+                    <p><a href="" class="footer-link">Sounds</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="footer-2-container">
-
-    </div>
-
     <!-- END OF FOOTER -->
 </body>
 
